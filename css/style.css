@@ -1,0 +1,46 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    border: 1px solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-rounded {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.right-rounded {
+    border-radius: 0px 10px 10px 0px;
+}
+
+nav>a {
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+}
+
+.banner-image {
+    border: 1px solid;
+    height: 450px;
+}
+
+.content {
+    height: 500px;
+}
+
+footer {
+    text-align: right;
+}
