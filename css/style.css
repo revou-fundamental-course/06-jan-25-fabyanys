@@ -5,32 +5,47 @@ html{
 }
 
 body {
-    background-color: #272829;
+    background-color: #F6F4F0;
+    margin: 0;
 }
 .main-header {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #FFF6E0;
-    padding-bottom: 10px;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #2E5077;
+    padding: 10px;
     align-content: center;
     align-items: center;
+    font-family: "Montserrat", serif;
+    background-color: #2E5077;
 }
 
 h1 {
-    font-family: "DM Serif Text", serif;
-    color: #FFF6E0;
+    font-family: "Montserrat", serif;
+    color: #2E5077;
+    font-size: 38px;
 }
 
-p {
+#greating {
+    text-align: center;
+}
+
+#promotion {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
     font-family: "Montserrat", serif;
-    color: #FFF6E0;
+}
+
+@media screen and (max-width: 768px) {
+    #promotion {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 .logo-icon {
-    border: 1px solid;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    width: 150px;
 }
 
 .logo-icon img {
@@ -76,21 +91,21 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-right: 10px; ;
-    background-color: #FFF6E0 ;
+    background-color: #2E5077; ;
     border-radius: 5px;
     color: #61677A;
 }
 
 nav>a {
-    border: 1px solid;
+    border: 0px solid;
     padding: 8px;
-    color: black;
+    color: #F6F4F0;
     text-decoration-line: none;
 }
 
 .banner-image {
-    border: 1px solid;
-    /* height: 450px; */
+    border: 0px solid;
+    height: 500px;
 }
 
 .banner-image img {
@@ -98,9 +113,115 @@ nav>a {
     height: 100%;
     object-fit: cover;
 }
-/* .content {
-    height: 500px;
-} */
+
+.button-slideshow{
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#button-previous {
+    background-color: #2E5077;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    color: #F6F4F0;
+    border-radius: 5px;
+    width: 80px;
+    margin-right: 5px;
+}
+
+#button-next {
+    background-color: #2E5077;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    color: #F6F4F0;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 5px;
+}
+
+#why-choose-us {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.why-choose-us-content {
+    font-family: "Montserrat", serif;
+    color: #4DA1A9;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+#our-services {
+    text-align: center;
+    color: #F6F4F0;
+    font-family: 'Montserrat', serif;
+    margin-top: 40px;
+}
+
+#our-services-content {
+    background-color: #2E5077;
+    color: #79D7BE;
+    padding: 30px;
+    display: flex;
+    font-family: 'Montserrat', serif;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 1180px) {
+    #our-services-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media  screen and (min-width: 1181px) {
+    #our-services-content {
+        height: 400px;
+    }
+}
+
+#loc {
+    font-family: "Montserrat", serif;
+}
+
+#location {
+    text-align: center;
+}
+
+#location-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.fotokota {
+    width: 200px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    #location-content{
+        flex-direction: column;
+        gap: 10px;
+    }    
+}
+
+.messageUs {
+    margin-top: 100px;
+    padding-top: 10px;
+    background-color: #4DA1A9;
+}
+
+#message-us {
+    text-align: center;
+}
 
 form {
     font-family: "Montserrat", serif;
@@ -123,7 +244,11 @@ form textarea {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    color: #FFF6E0;
+    color: #F6F4F0;
+    padding: 5%;
+    gap: 1rem;
+    background-color: #4DA1A9;
+    font-family: "Montserrat", serif;
 }
 
 #message-content {
@@ -139,7 +264,8 @@ form textarea {
     }
 
     #message-content {
-        width: 97%;
+        width: 95%;
+        padding: 10px;
     }
 
     form {
@@ -152,6 +278,21 @@ form textarea {
     padding: 5px
 }
 
-footer {
-    text-align: right;
+form button{
+    background-color: #61677A;
+    border-radius: 5px;
+    color: #F6F4F0;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    font-family: "Montserrat", serif;
+}
+
+#footerlogo {
+    width: 200px;
+}
+

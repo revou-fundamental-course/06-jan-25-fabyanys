@@ -25,7 +25,7 @@ function showDivs(n) {
     imglist[slidesIndex - 1].style.display = "block";
 }
 
-setInterval(() => {plusDivs(1)}, 1000);
+setInterval(() => {plusDivs(1)}, 3000);
 
 function validateForm() {
     const fullName = document.forms["message-form"]["full-name"].value;

@@ -14,14 +14,14 @@
     <header class="main-header">
         <!-- Logo -->
         <div class="logo-icon">
-            <img src="asset\icon\Logo.png" alt="Logo"/>
+            <img src="asset\icon\companyLogo.png" alt="Logo"/>
         </div>
 
         <!-- Navigation -->
         <nav class="main-nav">
             <a href="#home-page" class="left-rounded">Home</a>
-            <a href="#our-profile">Our Profile</a>
-            <a href="#portofolio">Portofolio</a>
+            <a href="#our-services">Our services</a>
+            <a href="#location">Location</a>
             <a href="#message-us" class="right-rounded">Message Us</a>
         </nav>
     </header>
@@ -29,48 +29,124 @@
     <!-- Main Content -->
     <main>
         <!-- Home Page -->
-        <section>
+        <section class="homePage">
             <!-- Title -->
             <header id="home-page">
-                <h1>Hi <span id="user-greating">User</span>, Welcome to our website!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt beatae ex, quae repellat deleniti illo eligendi fugiat dicta perferendis velit rem dolore quisquam! Quos ipsum facere, voluptate nobis corrupti similique.</p>
+                <h1 id="greating">Hi <span id="user-greating">User</span>, let's start capture your moments at FabyanYS</h1>
+                <p id="promotion">Are you planning a wedding, a family event, a special moment, or looking to create professional content for your business? We are here to help you capture every precious moment with high-quality photography and videography services.</p>
             </header>
 
             <div class="banner-image">
-                <img class="img-slideshow" src="asset\image\pexels-slides-1.jpg">
-                <img class="img-slideshow" src="asset\image\pexels-slides-2.jpg">
-                <img class="img-slideshow" src="asset\image\pexels-slides-3.jpg">
-
-                <button onclick="plusDivs(-1)">Previous</button>
-                <button onclick="plusDivs(1)">Next</button>
+                <img class="img-slideshow" src="asset\image\slidesImages-1.jpg">
+                <img class="img-slideshow" src="asset\image\slidesImages-2.jpg">
+                <img class="img-slideshow" src="asset\image\slidesImages-3.jpg">
+                
+                <div class="button-slideshow">
+                    <button id="button-previous" onclick="plusDivs(-1)">Previous</button>
+                    <button id="button-next" onclick="plusDivs(1)">Next</button>
+                </div>
             </div>
         </section>
 
-        <hr/>
-
-        <!-- Our Profile -->
+        <!-- Why Choose Us -->
         <section>
             <!-- Title -->
-            <header id="our-profile">
-                <h1>Our Profile</h1>
+            <header id="why-choose-us">
+                <h1>Why Choose Us</h1>
             </header>
 
-            <div class="content"></div>
+            <div class="content">
+                <div class="why-choose-us-content">
+                    <div>
+                        <h2>Professional and Experienced Team</h2>
+                        <p>Our team of skilled photographers and videographers is dedicated to delivering the best results tailored to your needs.</p>
+                    </div>
+
+                    <div>
+                        <h2>State-of-the-Art Equipment</h2>
+                        <p>We use the latest technology to ensure your photos and videos are of the highest quality, from high-resolution cameras to advanced editing tools.</p>
+                    </div>
+
+                    <div>
+                        <h2>Unlimited Creativity</h2>
+                        <p>Every project is a masterpiece. We ensure the final results are not only stunning but also reflect your personality and story.</p>
+                    </div>
+                    
+                    <div>
+                        <h2>Flexible Service Packages</h2>
+                        <p>We offer a range of packages to suit your needs, from small event documentation to large-scale content production.</p>
+                    </div>
         </section>
 
-        <!-- Portofolio -->
-        <section>
+        <!-- Our Services -->
+        <section class="ourServices">
             <!-- Title -->
-            <header id="portofolio">
-                <h1>Portofolio</h1>
+            <header id="our-services">
+                <h1>Our Services</h1>
             </header>
 
-            <div class="content"></div>
+            <div class="content" id="our-services-content">
+                <div>
+                    <h2>Event Photography</h2>
+                    <p>Weddings, birthdays, engagements, and corporate events.</p>
+                </div>
+
+                <div>
+                    <h2>Professional Videography</h2>
+                    <p>Event documentation, promotional videos, and advertisements.</p>
+                </div>
+
+                <div>
+                    <h2>Prewedding & Couple Shoots</h2>
+                    <p>Capture your love story with unique and creative concepts.</p>
+                </div>
+
+                <div>
+                    <h2>Product Photography & Videography</h2>
+                    <p>Enhance your business value with captivating visuals.</p>
+                </div>
+
+                <div>
+                    <h2>Social Media Content</h2>
+                    <p>Short videos, vlogs, and creative documentation for your branding needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- location -->
+        <section id="loc">
+            <!-- Title -->
+            <header id="location">
+                <h1>Location</h1>
+            </header>
+
+            <div class="content" id="location-content">
+                <div id="locSurabaya">
+                    <img class="fotokota" id="fotosurabaya" src="asset\image\surabaya.jpg" alt="Surabaya">
+                    <p>Surabaya</p>
+                </div>
+                
+                <div id="locJakarta">
+                    <img class="fotokota" id="fotojakarta" src="asset\image\jakarta.jpg" alt="Jakarta">
+                    <p>Jakarta</p>
+                </div>
+
+                <div id="locYogyakarta">
+                    <img class="fotokota" id="fotoyogyakarta" src="asset\image\yogyakarta.jpg" alt="Yogyakarta">
+                    <p>Yogyakarta</p>
+                </div>
+
+                <div id="locSemarang">
+                    <img class="fotokota" id="fotosemarang" src="asset\image\semarang.jpg" alt="Semarang">
+                    <p>Semarang</p>
+                </div>
+
+            </div>
 
         </section>
 
         <!-- Message Us -->
-         <section>
+         <section class="messageUs">
             <!-- Title -->
             <header id="message-us">
                 <h1>Message Us</h1>
@@ -117,11 +193,13 @@
          </section>
     </main>
 
-    <hr/>
-
     <!-- Footer -->
     <footer>
-        <p>Create By Fabyan Yafi Syahbaz</p>
+        <div>
+            <img id="footerlogo" src="asset\icon\companyLogo.png" alt="Logo">
+        </div>
+        
+        <div><p>Create By Fabyan Yafi Syahbaz</p></div>
     </footer>
 
     <script src="js\script.js"></script>
