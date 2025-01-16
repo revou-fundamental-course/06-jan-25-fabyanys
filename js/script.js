@@ -5,6 +5,28 @@ function replaceName() {
 
 replaceName();
 
+var slidesIndex = 1;
+showDivs(slidesIndex);
+
+function plusDivs(n) {
+    showDivs(slidesIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var imglist = document.getElementsByClassName("img-slideshow");
+    if (n > imglist.length) slidesIndex = 1;
+    else if (n < 1) slidesIndex = imglist.length;
+
+    for (i = 0; i < imglist.length; i++) {
+        imglist[i].style.display = "none";
+    }
+
+    imglist[slidesIndex - 1].style.display = "block";
+}
+
+setInterval(() => {plusDivs(1)}, 1000);
+
 function validateForm() {
     const fullName = document.forms["message-form"]["full-name"].value;
     const birthDate = document.forms["message-form"]["birth-date"].value;

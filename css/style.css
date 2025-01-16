@@ -16,6 +16,7 @@
 .logo-icon img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -29,11 +30,11 @@
     }
 
     .left-rounded {
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 5px 5px 0px 0px;
     }
 
     .right-rounded {
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 5px 5px;
     }
 
     .logo-icon {
@@ -43,11 +44,11 @@
 
 @media screen and (min-width: 769px) {
     .left-rounded {
-        border-radius: 10px 0px 0px 10px;
+        border-radius: 5px 0px 0px 5px;
     }
     
     .right-rounded {
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 5px 5px 0px;
     }
 }
 nav {
@@ -63,17 +64,37 @@ nav>a {
 
 .banner-image {
     border: 1px solid;
-    height: 450px;
+    /* height: 450px; */
 }
 
-.content {
-    height: 500px;
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+/* .content {
+    height: 500px;
+} */
 
 #message-us-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+#message-content {
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #message-us-content {
+        flex-direction: column;
+    }
+
+    #message-content {
+        width: 100%;
+    }
+    
 }
 
 footer {

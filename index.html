@@ -37,7 +37,12 @@
             </header>
 
             <div class="banner-image">
+                <img class="img-slideshow" src="asset\image\pexels-slides-1.jpg">
+                <img class="img-slideshow" src="asset\image\pexels-slides-2.jpg">
+                <img class="img-slideshow" src="asset\image\pexels-slides-3.jpg">
 
+                <button onclick="plusDivs(-1)">Previous</button>
+                <button onclick="plusDivs(1)">Next</button>
             </div>
         </section>
 
@@ -73,7 +78,7 @@
             
             <div class="content" id="message-us-content">
                 <!-- Form Message -->
-                <form name="message-form" onsubmit="return validateForm()">
+                <form name="message-form" onsubmit="return validateForm()" id="message-form">
                     <!-- Nama -->
                     Nama: <input placeholder="Nama" type="text" name="full-name"/>
                     <br/>
@@ -100,7 +105,7 @@
                 </form>
                 
                 <!-- Isi Pesan -->
-                <div>
+                <div id="message-content">
                     <p>Current Time : <span id="time"></span></p>
                     <p>Nama : <span id="sender-full-name"></span></p>
                     <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
